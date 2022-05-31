@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 4</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div id="container">
+        <p id="para1">PROBLEMS</p>
+        <p id="para2">OUTPUT</p>
+        <p id="para3">DEBUG CONSOLE</p>
+        <p id="para4">TERMINAL</p>
+        <div id="para5"></div>
+
+    </div>
+    <script>
+        async function Func1() {
+            let fruit1 = "mango";
+            let fruit2 = "mango";
+            let promiseOne = new Promise(function (resolve, reject) {
+                if (fruit1 == fruit2) {
+                    document.getElementById("para5").innerHTML = "Success, No error found";
+                }
+                else {
+                    document.getElementById("para5").innerHTML = "There is an error!";
+                }
+            });
+        }
+        Func1();
+    </script>
+
+</body>
+
+</html>
